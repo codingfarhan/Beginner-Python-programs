@@ -1,12 +1,12 @@
 print('welcome to the mean calculator')
-t=int(input('how many elements does the series have?'))
-print('please input the individual series')
-f=input("enter numbers seperated by space")
-list=f.split()
+k=int(input("how many elements does your individual series contain?"))
+j=[]
 sum=0
-for num in list:
-	sum+=int(num)
-    
-print('arithmetic mean=', sum/t)
+print("please enter the elements")
+for num in range(k):
+	 x=int(input())
+	 sum+=int(x)
+	 j.append(x)
+     
+print("average of elements of the list is:  ", sum/k)
 input('enter any key to exit')
- 
