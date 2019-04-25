@@ -1,0 +1,12 @@
+print('welcome to the mean calculator')
+t=int(input('how many elements does the series have?'))
+print('please input the individual series')
+f=input("enter numbers seperated by space")
+list=f.split()
+sum=0
+for num in list:
+	sum+=int(num)
+    
+print('arithmetic mean=', sum/t)
+input('enter any key to exit')
+ 
