@@ -1,0 +1,12 @@
+print('program to check if the entered numbers in the formm of (a,b,c) are pythagorean triplets')
+a=int(input('enter a'))
+b=int(input('enter  b'))
+c=int(input('enter c'))
+k=a*a+b*b
+o=c*c
+if k==o:
+	print("the three numbers form pythagorean triplets")
+else:
+	print("the three numbers dont form pythagorean triplets")
+
+input('enter any key to exit')
