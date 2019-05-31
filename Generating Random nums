@@ -1,0 +1,14 @@
+import random
+import sys
+
+flag=1
+
+while flag==1:
+	print('here are 5 random numbers: ','\n')
+	for i in range(5):
+	    print(random.randint(0,100))
+	ans=input('want to print more? (yes/no)')
+	if ans=='yes':
+		flag=1
+	else:
+	  sys.exit()
